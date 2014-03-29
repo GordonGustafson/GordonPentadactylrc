@@ -1,0 +1,110 @@
+set editor="emacsclient -c -a emacs"
+set defsearch=google
+
+set! browser.tabs.closeWindowWithLastTab=false
+
+highlight Hint font-family: monospace; font-size: 16px; font-weight: bold; text-transform: uppercase; color: white; background-color: red; padding: 0px 1px 0px 1px;
+" Make the active hint the same as regular hints (seems to only be useful when tabbing through hints)
+highlight Hint[active] font-family: monospace; font-size: 16px; font-weight: bold; text-transform: uppercase; color: white; background-color: red; padding: 0px 1px 0px 1px;
+
+" highlight <a> tags even if they have no href attritute
+set hinttags+=a
+
+cd C:/Users/GGustafson
+
+map -b -m=input / z
+map -b -m=input z ;
+
+map -b -m=input q '
+map -b -m=input w ,
+map -b -m=input e .
+map -b -m=input r p
+map -b -m=input t y
+map -b -m=input y f
+map -b -m=input u g
+map -b -m=input i c
+map -b -m=input o r
+map -b -m=input p l
+map -b -m=input [ /
+map -b -m=input ] =
+map -b -m=input s o
+map -b -m=input d e
+map -b -m=input f u
+map -b -m=input g i
+map -b -m=input h d
+map -b -m=input j h
+map -b -m=input k t
+map -b -m=input l n
+map -b -m=input ; s
+map -b -m=input \' -
+map -b -m=input x q
+map -b -m=input c j
+map -b -m=input v k
+map -b -m=input b x
+map -b -m=input n b
+map -b -m=input m m
+map -b -m=input , w
+map -b -m=input . v
+map -b -m=input Q "
+map -b -m=input W <
+map -b -m=input E >
+map -b -m=input R P
+map -b -m=input T Y
+map -b -m=input Y F
+map -b -m=input U G
+map -b -m=input I C
+map -b -m=input O R
+map -b -m=input P L
+map -b -m=input { ?
+map -b -m=input } +
+map -b -m=input S O
+map -b -m=input D E
+map -b -m=input F U
+map -b -m=input G I
+map -b -m=input H D
+map -b -m=input J H
+map -b -m=input K T
+map -b -m=input L N
+map -b -m=input : S
+map -b -m=input \" _
+map -b -m=input X Q
+map -b -m=input C J
+map -b -m=input V K
+map -b -m=input B X
+map -b -m=input N B
+map -b -m=input M M
+map -b -m=input < W
+map -b -m=input > V
+map -b -m=input ? Z
+map -b -m=input Z :
+map -b -m=input ] =
+map -b -m=input } +
+map -b -m=input = ]
+map -b -m=input + }
+map -b -m=input [ /
+map -b -m=input { ?
+map -b -m=input \- [
+map -b -m=input _ {
+
+map -b -m=input <C-v> <C-v><C-v>
+
+nmap -b l gt
+nmap -b h gT
+
+nmap -b L :forward<CR>
+nmap -b H :back<CR>
+
+nmap -b zl l
+nmap -b zh h
+
+map -modes caret,text-edit <C-f> <right>
+map -modes caret,text-edit <C-b> <left>
+map -modes caret,text-edit <C-p> <up>
+map -modes caret,text-edit <C-n> <down>
+map -modes caret,text-edit <C-a> <home>
+map -modes caret,text-edit <C-e> <end>
+
+cmap -b <A-l> <up>
+cmap -b <A-b> <down>
+
+
