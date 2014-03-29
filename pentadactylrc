@@ -1,3 +1,6 @@
+" '-b' executes the mapping as if there were no otehr user-defined mappings (like noremap in Vim)
+" '-m' lets you specify which modes the mapping will apply to
+
 set editor="emacsclient -c -a emacs"
 set defsearch=google
 
@@ -97,12 +100,12 @@ nmap -b H :back<CR>
 nmap -b zl l
 nmap -b zh h
 
-map -modes caret,text-edit <C-f> <right>
-map -modes caret,text-edit <C-b> <left>
-map -modes caret,text-edit <C-p> <up>
-map -modes caret,text-edit <C-n> <down>
-map -modes caret,text-edit <C-a> <home>
-map -modes caret,text-edit <C-e> <end>
+map -b -m=input,command-line <C-f> <Right>
+map -b -m=input,command-line <C-b> <Left>
+map -b -m=input,command-line <C-p> <Up>
+map -b -m=input,command-line <C-n> <Down>
+map -b -m=input,command-line <C-a> <Home>
+map -b -m=input,command-line <C-e> <End>
 
 cmap -b <A-l> <up>
 cmap -b <A-b> <down>
