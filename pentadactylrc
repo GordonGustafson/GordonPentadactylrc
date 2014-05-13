@@ -13,7 +13,7 @@ highlight Hint[active] font-family: monospace; font-size: 16px; font-weight: bol
 " highlight <a> tags even if they have no href attritute
 set hinttags+=a
 
-cd C:/Users/GGustafson
+cd $HOME/Desktop
 
 map -b -m=input / z
 map -b -m=input z ;
