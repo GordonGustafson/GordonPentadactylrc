@@ -110,4 +110,4 @@ map -b -m=input,command-line <C-e> <End>
 cmap -b <A-l> <up>
 cmap -b <A-b> <down>
 
-
+js editor.defaultRegister="+"
