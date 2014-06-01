@@ -15,7 +15,7 @@ highlight CmdLine -a font-size:16px !important;
 " highlight <a> tags even if they have no href attritute
 set hinttags+=a
 
-cd $HOME/Desktop
+cd $HOME/Downloads
 
 map -b -m=input / z
 map -b -m=input z ;
