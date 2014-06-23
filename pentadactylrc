@@ -94,6 +94,8 @@ map -b -m=input <C-v> <C-v><C-v>
 nmap -b l gt
 nmap -b h gT
 
+nmap -b gt gn
+
 nmap -b L :forward<CR>
 nmap -b H :back<CR>
 
