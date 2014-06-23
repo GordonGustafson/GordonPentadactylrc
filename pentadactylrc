@@ -10,6 +10,8 @@ highlight Hint font-family: monospace; font-size: 16px; font-weight: bold; text-
 " Make the active hint the same as regular hints (seems to only be useful when tabbing through hints)
 highlight Hint[active] font-family: monospace; font-size: 16px; font-weight: bold; text-transform: uppercase; color: white; background-color: red; padding: 0px 1px 0px 1px;
 
+highlight CmdLine -a font-size:16px !important;
+
 " highlight <a> tags even if they have no href attritute
 set hinttags+=a
 
