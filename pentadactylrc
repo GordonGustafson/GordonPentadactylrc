@@ -114,4 +114,7 @@ map -b -m=input,command-line <C-e> <End>
 cmap -b <A-l> <up>
 cmap -b <A-b> <down>
 
+" tgroup-switch is an ex-command from the git submodule TabGroupie in this repo
+nmap -b s :tgroup-switch 
+
 js editor.defaultRegister="+"
