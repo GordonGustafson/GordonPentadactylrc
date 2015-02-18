@@ -97,6 +97,10 @@ map -b <C-x> <C-v><C-x>
 
 nmap -b l gt
 nmap -b h gT
+" Simulate Jira's . shortcut. The second time the . command is given Jira
+" focuses the textbox automatically, causing gi to be entered in insert mode.
+" The <C-u> fixes this by clearing out any text in the dialog box.
+nmap -b > <C-v>.gi<C-u>
 
 nmap -b gt gn
 
