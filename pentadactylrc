@@ -128,4 +128,7 @@ nmap -b gm :tabmove
 
 nmap -b e :emenu 
 
+nmap -b S <A-m>s
+nmap -b L <A-m>l
+
 js editor.defaultRegister="+"
